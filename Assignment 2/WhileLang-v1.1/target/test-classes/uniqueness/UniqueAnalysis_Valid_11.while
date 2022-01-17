@@ -1,0 +1,7 @@
+void main() {
+    &int:1 p = new 123;
+    //
+    assert {f:p} == {f:p};
+    //
+    delete p;
+}

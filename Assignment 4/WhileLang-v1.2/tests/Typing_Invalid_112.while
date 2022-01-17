@@ -1,0 +1,6 @@
+type intnull is int|null
+type rec is {intnull[] f}
+
+int[] f(rec x) {
+    return x.f;
+}

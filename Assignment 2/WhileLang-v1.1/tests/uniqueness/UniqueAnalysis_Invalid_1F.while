@@ -1,0 +1,4 @@
+void main() {
+    &int:1 p = new 123;
+    {&int:1 f, &int:1 g} rec = {f:p, g:p};
+}

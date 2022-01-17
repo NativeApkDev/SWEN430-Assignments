@@ -1,0 +1,24 @@
+type expanded is {int|null f, int g}|{bool f, int g}|{int f, null g}|{null f,null g}|{bool f,null g}
+type factored is {int|null|bool f, int|null g}
+
+factored f(expanded r) {
+    return r;
+}
+
+expanded g(factored r) {
+    return r;
+}
+
+void main() {
+    expanded a = {f:null,g:null};
+    expanded b = {f:123,g:null};
+    expanded c = {f:null,g:123};
+    expanded d = {f:123,g:123};
+    expanded e = {f:false,g:123};
+    
+    assert f(a) == g(a);
+    assert f(b) == g(b);
+    assert f(c) == g(c);
+    assert f(d) == g(d);
+    assert f(e) == g(e);
+}

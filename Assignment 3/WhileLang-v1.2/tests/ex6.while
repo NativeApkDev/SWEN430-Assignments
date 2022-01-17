@@ -1,0 +1,11 @@
+type intnull is int|null
+
+intnull[][] f(intnull[][] xs, intnull[] x) {
+    xs[0] = x;
+    return xs;
+}
+
+void main() {
+    int|null x = 0; // supposed to get astore bytecode at bytecode #4 instead of an istore
+    assert x == 0;
+}

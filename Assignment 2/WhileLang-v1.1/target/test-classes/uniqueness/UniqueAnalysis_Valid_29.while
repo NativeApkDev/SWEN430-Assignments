@@ -1,0 +1,16 @@
+&int:1 fn(&int:1 p, int n) {
+    //
+    if(n < 0) {
+	delete p;
+	p = new 234;
+    }
+    //
+    return p;
+}
+void main() {
+    &int:1 q = new 123;
+    q = fn(q,12);
+    assert *q == 123;
+    q = fn(q,-1);
+    assert *q == 234;
+}

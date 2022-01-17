@@ -1,0 +1,11 @@
+null[][] f(null[][] xs, null[] ys) {
+    xs[0] = ys;
+    return xs;
+}
+
+void main() {
+    null[][] xs = [[null],[null]];
+    null[] ys = [null,null];
+    assert f(xs,ys) == [[null,null],[null]];
+}
+

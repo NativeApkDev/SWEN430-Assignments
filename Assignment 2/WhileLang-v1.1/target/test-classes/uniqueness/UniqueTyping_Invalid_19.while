@@ -1,0 +1,14 @@
+type Vec is { int len, &(int[]):1 data }
+type BorrowedVec is { int len, &(int[]) data }
+
+Vec create(int[] items) {
+    return {len:0, data: new items};
+}
+
+void main() {
+    BorrowedVec b = {len:0, data:new [1,2,3]};    
+    // array of vectors!
+    Vec[] vs = [create([4,5]), create([])];
+    //
+    vs[0] = b;
+}

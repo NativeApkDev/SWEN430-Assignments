@@ -1,0 +1,8 @@
+void main() {
+    &int p = new 123;
+    &int q = p;
+    //
+    q = new 344;
+    //
+    delete (&int:1) p;    
+}

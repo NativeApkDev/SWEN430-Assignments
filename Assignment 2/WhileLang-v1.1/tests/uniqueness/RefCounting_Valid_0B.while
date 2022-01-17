@@ -1,0 +1,12 @@
+void nop(&int p) {
+    {null|&int x, null|&int y} tmp = {x:p,y:p};
+    tmp.y = null;
+}
+
+void main() {
+    &int p = new 123;
+    //
+    nop(p);
+    //
+    delete (&int:1) p;    
+}

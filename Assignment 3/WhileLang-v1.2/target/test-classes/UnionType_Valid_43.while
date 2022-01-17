@@ -1,0 +1,15 @@
+{int|null f} f({int f} x, {null f} y, bool z) {
+    if z {
+	return x;
+    } else {
+	return y;
+    }
+}
+
+void main() {
+    {int f} r1 = {f: 123};
+    {null f} r2 = {f: null};
+    
+    assert f(r1,r2,true) == r1;
+    assert f(r1,r2,false) == r2;
+}

@@ -1,0 +1,11 @@
+type Vec is { int len, &(int[]):1 data }
+
+Vec create(int[] items) {
+    return {len:0, data: new items};
+}
+
+void main() {
+    &(int[]) p = new [1,2,3];
+    // array of vectors!
+    Vec[] vs = [create([4,5]), {len:0,data:p}];
+}

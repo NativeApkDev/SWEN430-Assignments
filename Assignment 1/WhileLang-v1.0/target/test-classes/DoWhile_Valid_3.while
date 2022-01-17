@@ -1,0 +1,11 @@
+int f() {
+  do {
+
+  } while false;
+
+  return -1;
+}
+
+void main() {
+    assert f() == -1;
+}

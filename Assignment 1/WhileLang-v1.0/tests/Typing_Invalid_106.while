@@ -1,0 +1,5 @@
+type rec is {int|null f}
+
+{int f} f(rec x) {
+    return x;
+}

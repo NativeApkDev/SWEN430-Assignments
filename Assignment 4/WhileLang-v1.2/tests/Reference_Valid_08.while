@@ -1,0 +1,4 @@
+void main() {
+    &{bool f} r = new {f:false};
+    assert !(r->f);
+}

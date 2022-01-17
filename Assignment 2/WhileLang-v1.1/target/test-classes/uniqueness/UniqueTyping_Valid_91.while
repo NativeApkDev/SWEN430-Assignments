@@ -1,0 +1,6 @@
+// assignment outline
+// part2 - reference subtyping
+void main() {
+	&int:1 p = new 123; 
+	&int q = p;
+}

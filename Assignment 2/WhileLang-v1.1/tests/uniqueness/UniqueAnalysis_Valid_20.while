@@ -1,0 +1,6 @@
+void main() {
+    &(int|null):1 p = new 123;
+    &int:1 q = (&int:1) p;
+    //
+    assert *q == 123;
+}

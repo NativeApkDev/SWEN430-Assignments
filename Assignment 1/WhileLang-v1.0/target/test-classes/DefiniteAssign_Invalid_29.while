@@ -1,0 +1,13 @@
+int f() {
+  int i = 0;
+  int r;
+  do {
+     i = i + 1;
+     if i == 1 {
+     	  continue;
+     }
+     r = 0;      
+  } while false;
+
+  return r;
+}

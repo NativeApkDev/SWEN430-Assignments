@@ -1,0 +1,13 @@
+int|null f(int x) {
+    if x < 0 {
+	return null;
+    } else {
+	return x;
+    }
+}
+
+void main() {
+    assert f(-1) == null;
+    assert f(0) == 0;
+    assert f(1) == 1;
+}

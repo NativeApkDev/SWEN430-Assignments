@@ -1,0 +1,5 @@
+type egunion is bool|null
+
+void main() {
+    assert 1 == 1;
+}

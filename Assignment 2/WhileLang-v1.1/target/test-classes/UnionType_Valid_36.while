@@ -1,0 +1,12 @@
+type intnull is int|null
+
+intnull[] f(int[] xs) {
+    xs[0] = 0;
+    return xs;
+}
+
+void main() {
+    assert f([0]) == [0];
+    assert f([1]) == [0];
+    assert f([1,2]) == [0,2];
+}

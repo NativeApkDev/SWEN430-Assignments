@@ -1,0 +1,15 @@
+bool|int f() {
+    bool|int y = true;
+    return y;
+}
+
+bool|int g() {
+    bool|int y = 1;
+    return y;
+}
+
+
+void main() {
+    assert f() == true;
+    assert g() == 1;
+}

@@ -1,0 +1,7 @@
+type refs is (&int:1)[]
+
+void main() {
+    &int:1 p = new 123;
+    &int q = new 123;    
+    &refs:1 rs = new [p, q];
+}

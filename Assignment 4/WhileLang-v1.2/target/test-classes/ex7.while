@@ -1,0 +1,15 @@
+type tac1tup is {int f1}
+
+//tac1tup f() {
+//    return {f1:2,f2:3};
+//}
+
+void main() {
+    tac1tup x = {f1:0}; //f();
+    //assert x == {f1:2};
+    x.f1 = x.f1 + 123;
+    assert x.f1 == 123; // There is a problem here since x.f1 = 0 and x.f1 is supposed to be 123. This means the value of
+    // x.f1 remains unchanged.
+    // assert x.f2 == 3; // This line works correctly which means the value of x.f2 remains unchanged.
+    // assert x == {f1:1,f2:3};
+}

@@ -1,0 +1,15 @@
+void nop(&int p) {
+    (&int|null)[] xs = [null;100];
+    // Build up 100 references!
+    for(int i=0;i!=|xs|;i=i+1) {
+	xs[i] = p;
+    }
+}
+
+void main() {
+    &int p = new 123;
+    //
+    nop(p);
+    //
+    delete (&int:1) p;    
+}

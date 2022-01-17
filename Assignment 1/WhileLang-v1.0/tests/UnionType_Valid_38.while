@@ -1,0 +1,17 @@
+type intnull is int|null
+
+intnull[] f(intnull[] xs, int|null x) {
+    xs[0] = x;
+    return xs;
+}
+
+intnull[] g(int|null x, int|null y) {
+    return [x,y];
+}
+
+void main() {
+    assert f([0],0) == [0];
+    assert f([1],0) == [0];
+    assert f([1],null) == [null];        
+    assert f([1,1],null) == g(null,1);
+}

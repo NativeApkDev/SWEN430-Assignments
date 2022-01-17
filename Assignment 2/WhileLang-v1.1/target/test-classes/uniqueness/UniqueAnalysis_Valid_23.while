@@ -1,0 +1,8 @@
+void main() {
+    &{int x, int y}:1 p = new {x:123, y:224};
+    &{int x} q = p;
+    &{int x} r = q;
+    //
+    assert q->x == 123;
+    assert r->x == 123;    
+}

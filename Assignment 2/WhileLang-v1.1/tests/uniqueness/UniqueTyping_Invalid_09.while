@@ -1,0 +1,9 @@
+void drop(&int:1 q) {
+    delete q;
+}
+
+void main() {
+    &int p = new 223;
+    //
+    drop(p);
+}

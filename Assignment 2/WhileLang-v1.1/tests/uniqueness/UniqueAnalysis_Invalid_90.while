@@ -1,0 +1,7 @@
+//assignment outline
+// part 3
+void main() {
+	&int:1 p = new 123;
+	&int:1 q = p;
+	&int:1 r = p; 
+}

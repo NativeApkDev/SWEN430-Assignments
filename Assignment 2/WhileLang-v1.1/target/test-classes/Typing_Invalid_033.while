@@ -1,0 +1,12 @@
+int cmp(int i, int len) {
+     return i;
+}
+
+int f(int[] items) {
+  int i = 0;
+  do {
+     i = i + 1;
+  } while cmp(i,|items|);
+
+  return -1;
+}

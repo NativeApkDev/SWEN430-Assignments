@@ -1,0 +1,3 @@
+void f(int|null x) {
+     bool s = (int|null) x;
+}

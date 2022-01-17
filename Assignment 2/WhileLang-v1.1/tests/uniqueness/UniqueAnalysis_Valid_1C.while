@@ -1,0 +1,15 @@
+void main() {
+    {&int:1 f} p = {f:new 123};
+    {&int:1 f} q = {f:new 223};
+    //
+    assert p != q;
+    assert p.f != q.f;
+    assert *(p.f) != *(q.f);
+    //
+    *(p.f) = 0;
+    assert *(p.f) == 0;
+    assert *(q.f) == 223;    
+    //
+    delete p.f;
+    delete q.f;
+}

@@ -1,0 +1,9 @@
+type unique is &{int f}:1
+
+void main() {
+    unique pr = new {f: 123};
+    //
+    assert pr->f == 123;
+    //
+    delete pr;
+}

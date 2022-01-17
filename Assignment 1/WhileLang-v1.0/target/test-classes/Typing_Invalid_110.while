@@ -1,0 +1,5 @@
+type rec is {int|null f}
+
+void f({rec f} x, int|bool y) {
+    x.f.f = y;
+}

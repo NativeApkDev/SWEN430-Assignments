@@ -1,0 +1,10 @@
+type intbool is int|bool
+
+intbool[] f(int x, bool y) {
+    return [x,y];
+}
+
+void main() {
+    assert f(1,true) == [1,true];
+    assert f(0,false) == [0,false];    
+}

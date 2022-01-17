@@ -1,0 +1,10 @@
+type intnull is int|null
+    
+intnull[] f(int|null x) {
+    return [x;3];
+}
+
+void main() {
+    assert f(1) == [1,1,1];
+    assert f(null) == [null,null,null];    
+}

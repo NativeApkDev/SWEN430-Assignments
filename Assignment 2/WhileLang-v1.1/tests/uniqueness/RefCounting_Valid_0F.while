@@ -1,0 +1,9 @@
+void main() {
+    &int p = new 123;
+    {&int f, &int g} q = {f:p,g:p};
+    //
+    q.f = new 344;
+    q.g = new 911;
+    //
+    delete (&int:1) p;    
+}

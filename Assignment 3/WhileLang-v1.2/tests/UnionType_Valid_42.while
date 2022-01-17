@@ -1,0 +1,8 @@
+{int|null f} f(int|null x) {
+    return {f: x};
+}
+
+void main() {
+    assert f(null) == {f:null};
+    assert f(1) == {f:1};
+}

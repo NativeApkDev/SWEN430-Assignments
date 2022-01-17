@@ -1,0 +1,5 @@
+void main() {
+    &{int x, int y} r = new {x:1, y:2};
+    assert r->x == 1 && r->y == 2;
+    delete r;
+}

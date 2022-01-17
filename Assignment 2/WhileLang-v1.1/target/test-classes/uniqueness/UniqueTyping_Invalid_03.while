@@ -1,0 +1,3 @@
+void main() {
+    {&int:1 f} p = new {f:new [1]};
+}

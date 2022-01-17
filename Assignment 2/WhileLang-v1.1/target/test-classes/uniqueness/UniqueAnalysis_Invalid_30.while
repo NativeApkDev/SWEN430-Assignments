@@ -1,0 +1,16 @@
+type Point is {&int:1 x, &int:1 y}
+
+&int:1 f(Point p, bool b) {
+    if(b) {
+	delete p.x;
+    } else {
+	delete p.y;
+    }
+    return p.x;
+}
+
+void main() {
+    Point p = {x:new 123, y:new 234};
+    f(p,false);
+    f(p,true);    
+}

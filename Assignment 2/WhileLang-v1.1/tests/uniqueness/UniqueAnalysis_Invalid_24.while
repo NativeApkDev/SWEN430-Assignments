@@ -1,0 +1,5 @@
+void main() {
+    &{&int:1 ptr}:1 r = new {ptr: new 0};
+    delete r->ptr;
+    assert *r == *r;
+}

@@ -1,0 +1,7 @@
+void f(null[] xs) {
+    null x = xs[0];
+}
+
+void main() {
+    f([null]);
+}

@@ -1,0 +1,5 @@
+type intnull is int|null
+
+int|bool f(intnull[] x) {
+    return x[0];
+}

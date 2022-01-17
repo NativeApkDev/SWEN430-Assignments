@@ -1,0 +1,9 @@
+int f() {
+  int i = 0;
+  do {
+     break;
+     i = i + 1;
+  } while false;
+
+  return i;
+}

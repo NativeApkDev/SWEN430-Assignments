@@ -1,0 +1,20 @@
+// Find index of first matching item
+int indexOf(int[] items, int item) {
+  int i = 0;
+
+  do {
+    if items[i] == item {
+      return i;
+    }
+    i = i + 1;
+  } while (i < |items|) && (i <= |items|);
+
+  return -1;
+}
+
+void main() {
+    assert indexOf([1,2,3,1],1) == 0;
+    assert indexOf([1,2,3,1],2) == 1;
+    assert indexOf([1,2,3,1],3) == 2;    
+    assert indexOf([0],2) == -1;    
+}

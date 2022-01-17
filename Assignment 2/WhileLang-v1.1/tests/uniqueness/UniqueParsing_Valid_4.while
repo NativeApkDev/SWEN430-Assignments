@@ -1,0 +1,7 @@
+void f({&int:1 f} p) {
+
+}
+
+void main() {
+
+}

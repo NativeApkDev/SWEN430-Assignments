@@ -1,0 +1,3 @@
+int f({null f} r) {
+    return r.f;
+}

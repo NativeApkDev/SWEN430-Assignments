@@ -1,0 +1,11 @@
+null f(null x) {
+    return null;
+}
+
+null g() {
+    return f(null);
+}
+
+void main() {
+    assert !(g() != null);
+}

@@ -1,0 +1,7 @@
+void main() {
+    &(int[]):1 pa = new [123,223,323];
+    //
+    assert *pa == [123,223,323];
+    //
+    delete pa;
+}

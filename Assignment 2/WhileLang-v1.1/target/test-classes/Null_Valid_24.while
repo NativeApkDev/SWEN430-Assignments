@@ -1,0 +1,9 @@
+type isNull is null
+
+null f(isNull r) {
+   return r;
+}
+
+void main() {
+    assert f(null) == null;
+}

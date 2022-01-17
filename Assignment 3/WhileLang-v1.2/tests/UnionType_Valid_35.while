@@ -1,0 +1,12 @@
+int|bool[] f(int x) {
+    if x < 0 {
+	return 0;
+    } else {
+	return [true;x];
+    }
+}
+
+void main() {
+    assert f(-1) == 0;
+    assert f(2) == [true,true];    
+}

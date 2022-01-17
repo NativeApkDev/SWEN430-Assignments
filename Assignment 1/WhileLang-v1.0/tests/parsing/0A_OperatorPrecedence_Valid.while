@@ -1,0 +1,14 @@
+void main() {
+    int u = 1;
+    int v = 2;
+    int w = 3;
+    //
+    assert u < v + 1;
+    assert u+1 <= 2;
+    assert 1+v != (w+1);
+    assert 1+v == w;
+    assert 1+u >= v;
+    assert 2+u > w-v;
+    assert u < 2 + v - 2;
+    assert u+1 <= v - (u+u) + 2;
+}

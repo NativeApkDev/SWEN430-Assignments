@@ -1,0 +1,11 @@
+type Vec is { int len, &(int[]):1 data }
+
+Vec from_array(int[] items) {
+    return {len: 0, data: new items};
+}
+
+void main() {
+    Vec v1 = from_array([1,2,3]);
+    Vec v2 = v1;
+    assert v1 == v2;
+}

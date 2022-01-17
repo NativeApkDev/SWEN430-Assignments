@@ -1,0 +1,4 @@
+void main() {
+    bool|null x = false;
+    assert x is null|int;
+}

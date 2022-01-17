@@ -1,0 +1,15 @@
+int f(int[] x) {
+    int y = x[0];
+    int z = x[0];
+    return z+y;
+}
+
+void main() {
+    int[] arr = [1,2,3];
+    assert arr[0] == 1; // arr[0] = 1 -> bit 16
+    assert arr[1] == 2; // arr[1] = 2  -> bit 32
+    assert f(arr) == 2; // arr[0] + arr[0] = 1 + 1 = 2.
+    // Array initialised as [length = 3 (0), tag0 = 0 (8), v0 = 1 (16),
+    // tag1 = 1 (24), v1 = 2 (32), tag2 = 2 (40), v2 = 3 (48)]
+    assert arr == [1,2,3];
+}

@@ -1,0 +1,15 @@
+void main() {
+    int sum = 0;
+    // Perform a sum
+    int[] items = [40,50,30,20,10];
+    for(int i=0;i!=|items|;i=i+1) {
+	sum = sum + items[i];
+    }
+    assert sum == 150;
+    // And another
+    items = [5,3,2];
+    for(int i=0;i!=|items|;i=i+1) {
+	sum = sum + items[i];
+    }
+    assert sum == 160;
+}

@@ -1,0 +1,19 @@
+type intnull is int|null
+
+intnull[][] f(intnull[][] xs, intnull[] x) {
+    xs[0] = x;
+    return xs;
+}
+
+void main() {
+    assert f([[0]],[0]) == [[0]];
+    assert f([[1]],[0]) == [[0]];
+    assert f([[1,2]],[0]) == [[0]];
+    assert f([[1],[1]],[0]) == [[0],[1]];
+
+    int|null n = null;
+    int|null z = 0;
+    int|null o = 1;        
+    
+    assert f([[z],[o]],[n]) == [[n],[o]];    
+}

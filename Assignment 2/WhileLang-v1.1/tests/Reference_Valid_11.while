@@ -1,0 +1,10 @@
+void fill(&int p, int n) {
+    *p = n;
+}
+
+void main() {
+    &int r = new 1;
+    fill(r,123);
+    assert *r == 123;
+    delete r;
+}

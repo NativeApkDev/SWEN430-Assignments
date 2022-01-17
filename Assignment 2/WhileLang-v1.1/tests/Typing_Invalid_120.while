@@ -1,0 +1,4 @@
+void main() {
+    &{int x, int y} p = new {x:1,y:2};
+    &{int x} q = p;
+}

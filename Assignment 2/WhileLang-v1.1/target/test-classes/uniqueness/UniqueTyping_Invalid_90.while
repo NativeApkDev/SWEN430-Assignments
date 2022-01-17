@@ -1,0 +1,9 @@
+// assignment outline
+// part 2 - reference subtyping
+void f(&int p) { 
+	&int:1 q = p; 
+}
+
+void main() {
+
+}

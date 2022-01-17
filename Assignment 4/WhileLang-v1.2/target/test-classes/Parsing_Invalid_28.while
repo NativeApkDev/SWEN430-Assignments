@@ -1,0 +1,4 @@
+void main() {
+    bool var = false;
+    assert var is var;
+}

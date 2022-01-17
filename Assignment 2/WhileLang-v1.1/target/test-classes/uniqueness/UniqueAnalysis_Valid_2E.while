@@ -1,0 +1,7 @@
+type Vec is {int len, &(int[]):1 data}
+
+void main() {
+    Vec v = {len:1, data: new [1,2,3]};
+    int x = v.len;
+    assert (*(v.data))[0] == 1;
+}

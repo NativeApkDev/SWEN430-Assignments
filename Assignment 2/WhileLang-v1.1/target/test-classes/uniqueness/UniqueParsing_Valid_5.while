@@ -1,0 +1,5 @@
+type nRef is null|&int:1
+
+void main() {
+
+}

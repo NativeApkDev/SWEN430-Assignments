@@ -1,0 +1,7 @@
+bool f(int|null x) {
+    if x < 0 {
+	return false;
+    } else {
+	return true;
+    }
+}

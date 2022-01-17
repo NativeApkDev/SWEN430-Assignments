@@ -1,0 +1,7 @@
+// assignment outline
+// part2 - relaxed subtyping
+void main() {
+	&{int x, int y}:1 a = new {x:123,y:223};
+	&{int x}:1 b = a;
+	*b = {x:0}; 
+}

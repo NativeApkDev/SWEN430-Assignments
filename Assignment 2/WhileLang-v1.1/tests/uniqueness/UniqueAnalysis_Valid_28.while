@@ -1,0 +1,6 @@
+void main() {
+    {&int:1 f} p = {f:new 123};
+    {&(int|null):1 f} q = p;
+    //
+    assert *(q.f) == 123;
+}

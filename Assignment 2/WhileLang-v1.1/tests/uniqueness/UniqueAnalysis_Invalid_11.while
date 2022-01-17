@@ -1,0 +1,9 @@
+void dropper(&(&int:1) p) {
+    delete *p; // illegal
+}
+
+void main() {
+    &(&int:1) p = new new 0;
+    &(&int:1) q = p;
+    dropper(p);
+}

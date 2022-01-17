@@ -1,0 +1,7 @@
+void main() {
+    assert 1+2*3 == 7;
+    assert 2*2+1 == 5;
+    assert 3+2*2+1 == 8;
+    assert 1+4/2 == 3;
+    assert 6/2+1+1 == 5;
+}

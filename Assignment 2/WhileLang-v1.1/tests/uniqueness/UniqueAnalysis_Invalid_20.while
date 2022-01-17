@@ -1,0 +1,7 @@
+void f({&int:1 ptr} rec) {}
+
+void main() {
+    &int:1 p = new 123;
+    &int:1 q = p;
+    f({ptr:p});
+}

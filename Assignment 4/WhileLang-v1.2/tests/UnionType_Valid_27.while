@@ -1,0 +1,17 @@
+bool|int f(int x) {
+    bool|int y;
+    if x < 0 {
+	y = false;
+    } else if x > 0 {
+	y = true;
+    } else {
+	y = x;
+    }
+    return y;
+}
+
+void main() {
+    assert f(-1) == false;
+    assert f(0) == 0;
+    assert f(1) == true;
+}

@@ -1,0 +1,10 @@
+type rec1 is {int f}|{null f}
+    
+rec1[] f(int|null x) {
+    return [{f: x}];
+}
+
+void main() {
+    assert f(null) == [{f:null}];
+    assert f(1) == [{f:1}];
+}

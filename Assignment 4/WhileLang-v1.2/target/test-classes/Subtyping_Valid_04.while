@@ -1,0 +1,10 @@
+{int f, int g}|{null f, int g}|{int f, null g}|{null f,null g} f(int|null x, int|null y) {
+    return {f: x, g: y};
+}
+
+void main() {
+    assert f(null,null) == {f:null,g:null};
+    assert f(1,null) == {f:1,g:null};
+    assert f(null,1) == {f:null,g:1};
+    assert f(123,123) == {f:123,g:123};
+}

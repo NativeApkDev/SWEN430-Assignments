@@ -1,0 +1,5 @@
+void main() {
+    null|&int:1 p = new 123;
+    null|&int:1 q = p;
+    assert p != null;
+}

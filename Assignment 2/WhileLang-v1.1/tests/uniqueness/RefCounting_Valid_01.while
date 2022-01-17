@@ -1,0 +1,20 @@
+void drop(&int p) {
+    // Only delete the reference
+    // if it is unique.
+    if(p is &int:1) {
+	delete (&int:1) p;
+    }
+}
+
+void main() {
+    &int p = new 123;
+    if(true) {
+	&int q = p;
+	*q = 223;
+	drop(q); // nop
+    }
+    //
+    assert *p == 223;
+    //
+    drop(p);
+}

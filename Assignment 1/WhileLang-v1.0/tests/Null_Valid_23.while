@@ -1,0 +1,8 @@
+null f({null f} r) {
+    r.f = null;
+    return r.f;
+}
+
+void main() {
+    assert f({f: null}) == null;
+}

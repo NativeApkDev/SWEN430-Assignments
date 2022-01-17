@@ -1,0 +1,4 @@
+void main() {
+    &{int f} r = new {f:1};
+    assert r->f == 1;
+}

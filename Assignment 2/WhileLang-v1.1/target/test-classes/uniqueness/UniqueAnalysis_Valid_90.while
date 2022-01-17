@@ -1,0 +1,8 @@
+// assignment outline
+// part3
+void main() {
+	&int:1 p = new 123; 
+	&int:1 q = new 223;
+	assert p != q;
+	assert *p == 123; 
+}

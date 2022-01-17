@@ -1,0 +1,3 @@
+{int a, int b} f({int b, int a} x) {
+     return ({int a, int b}) x;
+}

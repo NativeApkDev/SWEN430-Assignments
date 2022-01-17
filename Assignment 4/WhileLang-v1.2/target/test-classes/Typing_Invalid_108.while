@@ -1,0 +1,5 @@
+type rec is {int|null f}
+
+void f(rec x) {
+    x.f = false;
+}

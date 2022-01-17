@@ -1,0 +1,7 @@
+void main() {
+    &int p = new 123;
+    //
+    (&int:1)[] ps = [new 1,new 2];
+    //
+    ps = [ps[0],p];
+}

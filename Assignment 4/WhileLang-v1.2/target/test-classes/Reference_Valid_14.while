@@ -1,0 +1,14 @@
+type arr_t is int[]
+    
+void fill(&arr_t p, int n) {
+    for(int i=0;i!=|*p|;i=i+1) {
+	*p[i] = n;
+    }
+}
+
+void main() {
+    &arr_t r = new [1,2,3];
+    fill(r,123);
+    assert *r == [123,123,123];
+    delete r;
+}

@@ -1,0 +1,4 @@
+void f(int x) {
+    null y;
+    y = x;
+}

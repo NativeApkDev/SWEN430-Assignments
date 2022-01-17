@@ -1,0 +1,13 @@
+void drop(&(int|null):1 p) {
+    if(p is &int:1) {
+	delete (&int:1) p;
+    }
+}
+
+void main() {
+    &(int|null):1 p = new 123;
+    &(int|null):1 q = new null;    
+    //
+    delete p;
+    delete q;
+}

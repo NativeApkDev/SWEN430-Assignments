@@ -1,0 +1,4 @@
+void main() {
+    &(int[]) p = new [1,2,3];
+    &(bool[]) q = p;
+}

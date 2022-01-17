@@ -1,0 +1,6 @@
+type ref is &{int f}:1
+    
+void main() {
+    &{int f} p = new {f: 1};
+    ref q = p;
+}

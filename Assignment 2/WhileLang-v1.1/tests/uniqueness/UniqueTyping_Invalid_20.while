@@ -1,0 +1,13 @@
+type Vec is { int len, &(int[]):1 data }
+
+Vec from_array(int[] items) {
+    return {len: 0, data: new items};
+}
+
+void main() {
+    &(int[]) p = new [1,2,3];
+    //
+    Vec v = from_array([1,2,3]);
+    //
+    v.data = p;
+}

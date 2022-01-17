@@ -1,0 +1,5 @@
+type intnull is int|null
+
+void f(intnull[] x) {
+    x[0] = true;
+}

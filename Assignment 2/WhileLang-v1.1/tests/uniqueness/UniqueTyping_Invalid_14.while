@@ -1,0 +1,5 @@
+void main() {
+    &int p = new 123;
+    //
+    (&int:1)[] ps = [p,new 1];
+}

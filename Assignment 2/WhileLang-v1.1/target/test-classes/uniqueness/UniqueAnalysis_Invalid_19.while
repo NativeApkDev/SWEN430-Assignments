@@ -1,0 +1,10 @@
+type unique is &(&int:1)
+    
+void main() {
+    &int:1 q = new 123;
+    unique p = new q;
+    //
+    assert **p == 123;
+    //
+    delete *p;
+}

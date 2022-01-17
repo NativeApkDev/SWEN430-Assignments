@@ -1,0 +1,7 @@
+void main() {
+    &{bool f} r = new {f:false};
+    //
+    r->f = true;
+    //
+    assert r->f;
+}

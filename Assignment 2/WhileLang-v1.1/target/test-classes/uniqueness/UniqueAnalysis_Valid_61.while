@@ -1,0 +1,17 @@
+type Point is {&int:1 x, &int:1 y}
+
+void main() {
+    Point p = {x:new 224, y:new 123};
+    //
+    assert *(p.x) == *(p.x);
+    assert *(p.x) != *(p.y);
+    assert *(p.x) == *(p.y) + 101;    
+    //    
+    delete p.x;
+    // Cannot use p.x any more
+    // Can still use p.y
+    assert *(p.y) == 123;
+    *(p.y) = 101;
+    // Done
+    delete p.y;
+}

@@ -1,0 +1,11 @@
+// assignment outline
+// part2 - relaxed subtyping
+// p would no longer reference a heap location 
+// of type {int x, int y} at the assert 
+// statement.
+void main() {
+	&{int x, int y} p = new {x:123,y:223}; 
+	&{int x} q = p;
+	*q = {x:0};
+	assert p->y == 223; 
+}

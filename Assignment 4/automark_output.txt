@@ -1,0 +1,1092 @@
+<b>Submission (27 files):</b>
+
+<pre>
+jx86/io/AsmFileWriter.java
+jx86/lang/Instruction.java
+jx86/lang/Constant.java
+jx86/lang/Target.java
+jx86/lang/Register.java
+jx86/lang/X86File.java
+whilelang/Main.java
+whilelang/ast/Type.java
+whilelang/ast/WhileFile.java
+whilelang/ast/Expr.java
+whilelang/ast/Stmt.java
+whilelang/ast/Attribute.java
+whilelang/compiler/UnreachableCode.java
+whilelang/compiler/DefiniteAssignment.java
+whilelang/compiler/Lexer.java
+whilelang/compiler/WhileCompiler.java
+whilelang/compiler/Parser.java
+whilelang/compiler/X86FileWriter.java
+whilelang/compiler/TypeChecker.java
+whilelang/testing/WhileLangTests.java
+whilelang/testing/x86/X86Tests.java
+whilelang/util/DataFlowAnalysis.java
+whilelang/util/SyntaxError.java
+whilelang/util/AbstractSyntaxTree.java
+whilelang/util/Pair.java
+whilelang/util/SyntacticElement.java
+whilelang/util/Interpreter.java
+</pre>
+
+Testing (stdout):
+<pre>
+========================================
+Part_1
+========================================
+test_1 .............................. OK
+test_10 ............................. OK
+test_11 ............................. OK
+test_12 ............................. OK
+test_13 ............................. OK
+test_14 ............................. OK
+test_15 ............................. OK
+test_16 ............................. OK
+test_17 ............................. OK
+test_18 ............................. OK
+test_19 ............................. OK
+test_2 .............................. OK
+test_20 ............................. OK
+test_21 ............................. OK
+test_22 ............................. OK
+test_23 ............................. OK
+test_24 ............................. OK
+test_3 .............................. OK
+test_4 .............................. OK
+test_5 .............................. OK
+test_6 .............................. OK
+test_7 .............................. OK
+test_8 .............................. OK
+test_9 .............................. OK
+
+Part_1 Total: 24 / 24
+
+========================================
+Part_2
+========================================
+test_1 .............................. OK
+test_10 ............................. OK
+test_11 ............................. OK
+test_12 ............................. OK
+test_13 ............................. OK
+test_14 ............................. OK
+test_15 ............................. OK
+test_16 ............................. OK
+test_17 ............................. OK
+test_18 ............................. OK
+test_19 ............................. OK
+test_2 .............................. OK
+test_20 ............................. OK
+test_21 ............................. OK
+test_22 ............................. OK
+test_23 ............................. OK
+test_24 ............................. OK
+test_25 ............................. OK
+test_26 ............................. OK
+test_27 ............................. OK
+test_28 ............................. OK
+test_29 ............................. OK
+test_3 .............................. OK
+test_30 ............................. OK
+test_31 ............................. OK
+test_32 ............................. OK
+test_33 ............................. OK
+test_34 ............................. OK
+test_4 .............................. OK
+test_5 .............................. OK
+test_6 .............................. OK
+test_7 .............................. OK
+test_8 .............................. OK
+test_9 .............................. OK
+
+Part_2 Total: 34 / 34
+
+========================================
+Part_3
+========================================
+test_1 .............................. OK
+test_10 ............................. OK
+test_11 ............................. OK
+test_12 ............................. OK
+test_13 ............................. OK
+test_14 ............................. OK
+test_15 ............................. OK
+test_16 ............................. OK
+test_17 ............................. OK
+test_18 ............................. OK
+test_19 ......................... FAILED
+test_2 .............................. OK
+test_20 ............................. OK
+test_21 ............................. OK
+test_22 ............................. OK
+test_23 ............................. OK
+test_24 ............................. OK
+test_25 ......................... FAILED
+test_26 ............................. OK
+test_27 ............................. OK
+test_28 ............................. OK
+test_29 ............................. OK
+test_3 .............................. OK
+test_30 ............................. OK
+test_31 ......................... FAILED
+test_32 ............................. OK
+test_33 ............................. OK
+test_34 ............................. OK
+test_35 ............................. OK
+test_36 ............................. OK
+test_37 ............................. OK
+test_38 ............................. OK
+test_39 ............................. OK
+test_4 .............................. OK
+test_40 ............................. OK
+test_41 ............................. OK
+test_42 ............................. OK
+test_43 ......................... FAILED
+test_44 ............................. OK
+test_45 ............................. OK
+test_46 ............................. OK
+test_47 ............................. OK
+test_48 ............................. OK
+test_49 ............................. OK
+test_5 .......................... FAILED
+test_6 .............................. OK
+test_7 .............................. OK
+test_8 .............................. OK
+test_9 .............................. OK
+
+Part_3 Total: 44 / 49
+
+========================================
+Part_4
+========================================
+test_1 .............................. OK
+test_10 ............................. OK
+test_11 ............................. OK
+test_12 ............................. OK
+test_13 ......................... FAILED
+test_14 ............................. OK
+test_15 ............................. OK
+test_16 ............................. OK
+test_17 ............................. OK
+test_18 ......................... FAILED
+test_19 ............................. OK
+test_2 .............................. OK
+test_20 ............................. OK
+test_3 .............................. OK
+test_4 .......................... FAILED
+test_5 .............................. OK
+test_6 .............................. OK
+test_7 .............................. OK
+test_8 .............................. OK
+test_9 .............................. OK
+
+Part_4 Total: 17 / 20
+
+========================================
+Part_1.test_1 (OK)
+========================================
+
+========================================
+Part_1.test_10 (OK)
+========================================
+
+========================================
+Part_1.test_11 (OK)
+========================================
+
+========================================
+Part_1.test_12 (OK)
+========================================
+
+========================================
+Part_1.test_13 (OK)
+========================================
+
+========================================
+Part_1.test_14 (OK)
+========================================
+
+========================================
+Part_1.test_15 (OK)
+========================================
+
+========================================
+Part_1.test_16 (OK)
+========================================
+
+========================================
+Part_1.test_17 (OK)
+========================================
+
+========================================
+Part_1.test_18 (OK)
+========================================
+
+========================================
+Part_1.test_19 (OK)
+========================================
+
+========================================
+Part_1.test_2 (OK)
+========================================
+
+========================================
+Part_1.test_20 (OK)
+========================================
+
+========================================
+Part_1.test_21 (OK)
+========================================
+
+========================================
+Part_1.test_22 (OK)
+========================================
+
+========================================
+Part_1.test_23 (OK)
+========================================
+
+========================================
+Part_1.test_24 (OK)
+========================================
+
+========================================
+Part_1.test_3 (OK)
+========================================
+
+========================================
+Part_1.test_4 (OK)
+========================================
+
+========================================
+Part_1.test_5 (OK)
+========================================
+
+========================================
+Part_1.test_6 (OK)
+========================================
+
+========================================
+Part_1.test_7 (OK)
+========================================
+
+========================================
+Part_1.test_8 (OK)
+========================================
+
+========================================
+Part_1.test_9 (OK)
+========================================
+
+========================================
+Part_2.test_1 (OK)
+========================================
+
+========================================
+Part_2.test_10 (OK)
+========================================
+
+========================================
+Part_2.test_11 (OK)
+========================================
+
+========================================
+Part_2.test_12 (OK)
+========================================
+
+========================================
+Part_2.test_13 (OK)
+========================================
+
+========================================
+Part_2.test_14 (OK)
+========================================
+
+========================================
+Part_2.test_15 (OK)
+========================================
+
+========================================
+Part_2.test_16 (OK)
+========================================
+
+========================================
+Part_2.test_17 (OK)
+========================================
+
+========================================
+Part_2.test_18 (OK)
+========================================
+
+========================================
+Part_2.test_19 (OK)
+========================================
+
+========================================
+Part_2.test_2 (OK)
+========================================
+
+========================================
+Part_2.test_20 (OK)
+========================================
+
+========================================
+Part_2.test_21 (OK)
+========================================
+
+========================================
+Part_2.test_22 (OK)
+========================================
+
+========================================
+Part_2.test_23 (OK)
+========================================
+
+========================================
+Part_2.test_24 (OK)
+========================================
+
+========================================
+Part_2.test_25 (OK)
+========================================
+
+========================================
+Part_2.test_26 (OK)
+========================================
+
+========================================
+Part_2.test_27 (OK)
+========================================
+
+========================================
+Part_2.test_28 (OK)
+========================================
+
+========================================
+Part_2.test_29 (OK)
+========================================
+
+========================================
+Part_2.test_3 (OK)
+========================================
+
+========================================
+Part_2.test_30 (OK)
+========================================
+
+========================================
+Part_2.test_31 (OK)
+========================================
+
+========================================
+Part_2.test_32 (OK)
+========================================
+
+========================================
+Part_2.test_33 (OK)
+========================================
+
+========================================
+Part_2.test_34 (OK)
+========================================
+
+========================================
+Part_2.test_4 (OK)
+========================================
+
+========================================
+Part_2.test_5 (OK)
+========================================
+
+========================================
+Part_2.test_6 (OK)
+========================================
+
+========================================
+Part_2.test_7 (OK)
+========================================
+
+========================================
+Part_2.test_8 (OK)
+========================================
+
+========================================
+Part_2.test_9 (OK)
+========================================
+
+========================================
+Part_3.test_1 (OK)
+========================================
+
+========================================
+Part_3.test_10 (OK)
+========================================
+
+========================================
+Part_3.test_11 (OK)
+========================================
+
+========================================
+Part_3.test_12 (OK)
+========================================
+
+========================================
+Part_3.test_13 (OK)
+========================================
+
+========================================
+Part_3.test_14 (OK)
+========================================
+
+========================================
+Part_3.test_15 (OK)
+========================================
+
+========================================
+Part_3.test_16 (OK)
+========================================
+
+========================================
+Part_3.test_17 (OK)
+========================================
+
+========================================
+Part_3.test_18 (OK)
+========================================
+
+========================================
+Part_3.test_19 (FAILED)
+========================================
+============================================================
+/vol/submit/swen430_2021T2/Assignment_4/tjiptodomi/marking/automark/Compile/HiddenFor_Valid_6
+============================================================
+HiddenFor_Valid_6: /vol/ecs/courses/SWEN430/2021T2-prvt/WhileLang/Compiler/src/main/java/whilelang/runtime/runtime.c:130: assertion: Assertion `boolean' failed.
+
+ > int[] add(int[] v1, int[] v2) {
+ >     //
+ >     for(int i = 0;i<|v1|;i=i+1) {
+ >         v1[i] = v1[i] + v2[i];
+ >     }
+ >     return v1;
+ > }
+ > 
+ > void main() {
+ >     assert add([1, 2, 3], [4, 5, 6]) == [5,7,9];
+ >     assert add([1], [4]) == [5];
+ >     assert add([], []) == [];
+ > }
+
+org.opentest4j.AssertionFailedError: Assertion failure running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:323)
+	at Part_1.test(Part_1.java:209)
+	at Part_3.test_19(Part_3.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:47)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:140)
+	at Part_1.test(Part_1.java:211)
+	at Part_3.test_19(Part_3.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+Caused by: org.opentest4j.AssertionFailedError: Problem running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:330)
+	at Part_1.test(Part_1.java:209)
+	... 6 more
+
+========================================
+Part_3.test_2 (OK)
+========================================
+
+========================================
+Part_3.test_20 (OK)
+========================================
+
+========================================
+Part_3.test_21 (OK)
+========================================
+
+========================================
+Part_3.test_22 (OK)
+========================================
+
+========================================
+Part_3.test_23 (OK)
+========================================
+
+========================================
+Part_3.test_24 (OK)
+========================================
+
+========================================
+Part_3.test_25 (FAILED)
+========================================
+============================================================
+/vol/submit/swen430_2021T2/Assignment_4/tjiptodomi/marking/automark/Compile/HiddenRecordAssign_Valid_2
+============================================================
+HiddenRecordAssign_Valid_2: /vol/ecs/courses/SWEN430/2021T2-prvt/WhileLang/Compiler/src/main/java/whilelang/runtime/runtime.c:130: assertion: Assertion `boolean' failed.
+
+ > type rec is {int f1, int f2}
+ > 
+ > rec f(rec x) {
+ >     x.f1 = 0;
+ >     return x;
+ > }
+ > 
+ > void main() {
+ >     rec x = {f1:2,f2:3};
+ >     rec y = f(x);
+ >     //
+ >     assert x == {f1:2,f2:3};
+ >     assert x.f1 == 2;
+ >     assert x.f2 == 3;
+ >     //
+ >     assert y == {f1:0,f2:3};
+ >     assert y.f1 == 0;
+ >     assert y.f2 == 3;    
+ > }
+
+org.opentest4j.AssertionFailedError: Assertion failure running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:323)
+	at Part_1.test(Part_1.java:209)
+	at Part_3.test_25(Part_3.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:47)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:140)
+	at Part_1.test(Part_1.java:211)
+	at Part_3.test_25(Part_3.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+Caused by: org.opentest4j.AssertionFailedError: Problem running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:330)
+	at Part_1.test(Part_1.java:209)
+	... 6 more
+
+========================================
+Part_3.test_26 (OK)
+========================================
+
+========================================
+Part_3.test_27 (OK)
+========================================
+
+========================================
+Part_3.test_28 (OK)
+========================================
+
+========================================
+Part_3.test_29 (OK)
+========================================
+
+========================================
+Part_3.test_3 (OK)
+========================================
+
+========================================
+Part_3.test_30 (OK)
+========================================
+
+========================================
+Part_3.test_31 (FAILED)
+========================================
+============================================================
+/vol/submit/swen430_2021T2/Assignment_4/tjiptodomi/marking/automark/Compile/HiddenRecordAssign_Valid_9
+============================================================
+HiddenRecordAssign_Valid_9: /vol/ecs/courses/SWEN430/2021T2-prvt/WhileLang/Compiler/src/main/java/whilelang/runtime/runtime.c:130: assertion: Assertion `boolean' failed.
+
+ > type rec is {bool f1, bool f2}
+ > 
+ > rec f(rec x) {
+ >     x.f1 = false;
+ >     return x;
+ > }
+ > 
+ > void main() {
+ >     rec x = {f1:true,f2:true};
+ >     rec y = f(x);
+ >     //
+ >     assert x == {f1:true,f2:true};
+ >     assert x.f1 == true;
+ >     assert x.f2 == true;
+ >     //
+ >     assert y == {f1:false,f2:true};
+ >     assert y.f1 == false;
+ >     assert y.f2 == true;    
+ > }
+
+org.opentest4j.AssertionFailedError: Assertion failure running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:323)
+	at Part_1.test(Part_1.java:209)
+	at Part_3.test_31(Part_3.java:175)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:47)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:140)
+	at Part_1.test(Part_1.java:211)
+	at Part_3.test_31(Part_3.java:175)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+Caused by: org.opentest4j.AssertionFailedError: Problem running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:330)
+	at Part_1.test(Part_1.java:209)
+	... 6 more
+
+========================================
+Part_3.test_32 (OK)
+========================================
+
+========================================
+Part_3.test_33 (OK)
+========================================
+
+========================================
+Part_3.test_34 (OK)
+========================================
+
+========================================
+Part_3.test_35 (OK)
+========================================
+
+========================================
+Part_3.test_36 (OK)
+========================================
+
+========================================
+Part_3.test_37 (OK)
+========================================
+
+========================================
+Part_3.test_38 (OK)
+========================================
+
+========================================
+Part_3.test_39 (OK)
+========================================
+
+========================================
+Part_3.test_4 (OK)
+========================================
+
+========================================
+Part_3.test_40 (OK)
+========================================
+
+========================================
+Part_3.test_41 (OK)
+========================================
+
+========================================
+Part_3.test_42 (OK)
+========================================
+
+========================================
+Part_3.test_43 (FAILED)
+========================================
+============================================================
+/vol/submit/swen430_2021T2/Assignment_4/tjiptodomi/marking/automark/Compile/HiddenWhile_Valid_10
+============================================================
+HiddenWhile_Valid_10: /vol/ecs/courses/SWEN430/2021T2-prvt/WhileLang/Compiler/src/main/java/whilelang/runtime/runtime.c:130: assertion: Assertion `boolean' failed.
+
+ > int[] add(int[] v1, int[] v2) {
+ >     //
+ >     int i = 0;
+ >     while(i < |v1|) {
+ >         v1[i] = v1[i] + v2[i];
+ >         i = i + 1;
+ >     }
+ >     return v1;
+ > }
+ > 
+ > void main() {
+ >     assert add([1, 2, 3], [4, 5, 6]) == [5,7,9];
+ >     assert add([1], [4]) == [5];
+ >     assert add([], []) == [];
+ > }
+
+org.opentest4j.AssertionFailedError: Assertion failure running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:323)
+	at Part_1.test(Part_1.java:209)
+	at Part_3.test_43(Part_3.java:235)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:47)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:140)
+	at Part_1.test(Part_1.java:211)
+	at Part_3.test_43(Part_3.java:235)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+Caused by: org.opentest4j.AssertionFailedError: Problem running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:330)
+	at Part_1.test(Part_1.java:209)
+	... 6 more
+
+========================================
+Part_3.test_44 (OK)
+========================================
+
+========================================
+Part_3.test_45 (OK)
+========================================
+
+========================================
+Part_3.test_46 (OK)
+========================================
+
+========================================
+Part_3.test_47 (OK)
+========================================
+
+========================================
+Part_3.test_48 (OK)
+========================================
+
+========================================
+Part_3.test_49 (OK)
+========================================
+
+========================================
+Part_3.test_5 (FAILED)
+========================================
+============================================================
+/vol/submit/swen430_2021T2/Assignment_4/tjiptodomi/marking/automark/Compile/HiddenArrayGenerator_Valid_1
+============================================================
+HiddenArrayGenerator_Valid_1: /vol/ecs/courses/SWEN430/2021T2-prvt/WhileLang/Compiler/src/main/java/whilelang/runtime/runtime.c:130: assertion: Assertion `boolean' failed.
+
+ > int[] inc(int[] xs) {    
+ >     int[] r = [0;|xs|+|xs|];
+ >     for(int i=0;i!=|xs|;i=i+1) {
+ >         r[i] = xs[i]+1;
+ > 	r[|r|-(i+1)] = xs[i]+1;
+ >     }
+ >     return r;
+ > }
+ > 
+ > void main() {
+ >     int[] x = inc([1,2,3]);
+ >     assert x == [2,3,4,4,3,2];
+ >     int[] y = inc([]);
+ >     assert y == [];    
+ > }
+
+org.opentest4j.AssertionFailedError: Assertion failure running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:323)
+	at Part_1.test(Part_1.java:209)
+	at Part_3.test_5(Part_3.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:47)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:140)
+	at Part_1.test(Part_1.java:211)
+	at Part_3.test_5(Part_3.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+Caused by: org.opentest4j.AssertionFailedError: Problem running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:330)
+	at Part_1.test(Part_1.java:209)
+	... 6 more
+
+========================================
+Part_3.test_6 (OK)
+========================================
+
+========================================
+Part_3.test_7 (OK)
+========================================
+
+========================================
+Part_3.test_8 (OK)
+========================================
+
+========================================
+Part_3.test_9 (OK)
+========================================
+
+========================================
+Part_4.test_1 (OK)
+========================================
+
+========================================
+Part_4.test_10 (OK)
+========================================
+
+========================================
+Part_4.test_11 (OK)
+========================================
+
+========================================
+Part_4.test_12 (OK)
+========================================
+
+========================================
+Part_4.test_13 (FAILED)
+========================================
+ > void main() {
+ >     assert [[[[[[[[[[1]]]]]]]]]] == [[[[[[[[[[1]]]]]]]]]];
+ >     assert [[[[[[[[[[1]]]]]]]]]] != [[[[[[[[[[0]]]]]]]]]];    
+ > }
+
+org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:47)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:140)
+	at Part_1.test(Part_1.java:211)
+	at Part_4.test_13(Part_4.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+Caused by: java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:459)
+	at whilelang.compiler.X86FileWriter$Context.selectFreeRegister(X86FileWriter.java:2837)
+	at whilelang.compiler.X86FileWriter.bitwiseCopy(X86FileWriter.java:2021)
+	at whilelang.compiler.X86FileWriter.compoundInitialiser(X86FileWriter.java:2267)
+	at whilelang.compiler.X86FileWriter.translateArrayInitialiser(X86FileWriter.java:1262)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:1003)
+	at whilelang.compiler.X86FileWriter.translateArrayInitialiser(X86FileWriter.java:1290)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:1003)
+	at whilelang.compiler.X86FileWriter.translateArrayInitialiser(X86FileWriter.java:1290)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:1003)
+	at whilelang.compiler.X86FileWriter.translateArrayInitialiser(X86FileWriter.java:1290)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:1003)
+	at whilelang.compiler.X86FileWriter.translateArrayInitialiser(X86FileWriter.java:1290)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:1003)
+	at whilelang.compiler.X86FileWriter.translateArrayInitialiser(X86FileWriter.java:1290)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:1003)
+	at whilelang.compiler.X86FileWriter.translateEqualityCondition(X86FileWriter.java:921)
+	at whilelang.compiler.X86FileWriter.translateCondition(X86FileWriter.java:799)
+	at whilelang.compiler.X86FileWriter.translateBinaryCondition(X86FileWriter.java:1343)
+	at whilelang.compiler.X86FileWriter.translateBinary(X86FileWriter.java:1323)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:1006)
+	at whilelang.compiler.X86FileWriter.translateAssert(X86FileWriter.java:361)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:302)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:289)
+	at whilelang.compiler.X86FileWriter.translate(X86FileWriter.java:153)
+	at whilelang.compiler.X86FileWriter.build(X86FileWriter.java:99)
+	at Part_1.compileTest(Part_1.java:237)
+	at Part_1.test(Part_1.java:207)
+	... 6 more
+
+========================================
+Part_4.test_14 (OK)
+========================================
+
+========================================
+Part_4.test_15 (OK)
+========================================
+
+========================================
+Part_4.test_16 (OK)
+========================================
+
+========================================
+Part_4.test_17 (OK)
+========================================
+
+========================================
+Part_4.test_18 (FAILED)
+========================================
+============================================================
+/vol/submit/swen430_2021T2/Assignment_4/tjiptodomi/marking/automark/Compile/HiddenRecordArray_Valid_2
+============================================================
+HiddenRecordArray_Valid_2: /vol/ecs/courses/SWEN430/2021T2-prvt/WhileLang/Compiler/src/main/java/whilelang/runtime/runtime.c:130: assertion: Assertion `boolean' failed.
+
+ > type msg is { int x, int y }
+ > 
+ > msg[] merge(int[] xs, int[] ys) {
+ >     msg[] ms = [{x:0,y:0};|xs|];
+ >     int i=0;    
+ >     
+ >     while(i < |xs| && i < |ys|) {
+ > 	ms[i] = {x:xs[i], y:ys[i]};
+ > 	i = i + 1;
+ >     }
+ >     return ms;
+ > }
+ > 
+ > void main() {
+ >     assert merge([],[]) == [];
+ >     assert merge([1],[2]) == [{x:1,y:2}];
+ >     assert merge([1,2],[3,4]) == [{x:1,y:3},{x:2,y:4}];
+ > }
+
+org.opentest4j.AssertionFailedError: Assertion failure running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:323)
+	at Part_1.test(Part_1.java:209)
+	at Part_4.test_18(Part_4.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:47)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:140)
+	at Part_1.test(Part_1.java:211)
+	at Part_4.test_18(Part_4.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+Caused by: org.opentest4j.AssertionFailedError: Problem running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:330)
+	at Part_1.test(Part_1.java:209)
+	... 6 more
+
+========================================
+Part_4.test_19 (OK)
+========================================
+
+========================================
+Part_4.test_2 (OK)
+========================================
+
+========================================
+Part_4.test_20 (OK)
+========================================
+
+========================================
+Part_4.test_3 (OK)
+========================================
+
+========================================
+Part_4.test_4 (FAILED)
+========================================
+============================================================
+/vol/submit/swen430_2021T2/Assignment_4/tjiptodomi/marking/automark/Compile/HiddenArrayAssign_Valid_10
+============================================================
+HiddenArrayAssign_Valid_10: /vol/ecs/courses/SWEN430/2021T2-prvt/WhileLang/Compiler/src/main/java/whilelang/runtime/runtime.c:130: assertion: Assertion `boolean' failed.
+
+ > int[][][] move(int from, int to, int[][][] arr) {
+ >     int[][] tmp = arr[to];
+ >     arr[to] = arr[from];
+ >     arr[from] = tmp;
+ >     return arr;
+ > }
+ > 
+ > void main() {
+ >     int[][][] ls = [[[1,2,3]],[[4,5,6]],[[7,8,9]]];
+ >     ls = move(0,1,ls);
+ >     assert ls == [[[4,5,6]],[[1,2,3]],[[7,8,9]]];
+ >     ls = move(1,2,ls);
+ >     assert ls == [[[4,5,6]],[[7,8,9]],[[1,2,3]]];
+ > }
+
+org.opentest4j.AssertionFailedError: Assertion failure running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:323)
+	at Part_1.test(Part_1.java:209)
+	at Part_4.test_4(Part_4.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:47)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:140)
+	at Part_1.test(Part_1.java:211)
+	at Part_4.test_4(Part_4.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at swenunit.util.ProcessTimerMethod.main(ProcessTimerMethod.java:89)
+Caused by: org.opentest4j.AssertionFailedError: Problem running native executable
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:117)
+	at Part_1.executeTest(Part_1.java:330)
+	at Part_1.test(Part_1.java:209)
+	... 6 more
+
+========================================
+Part_4.test_5 (OK)
+========================================
+
+========================================
+Part_4.test_6 (OK)
+========================================
+
+========================================
+Part_4.test_7 (OK)
+========================================
+
+========================================
+Part_4.test_8 (OK)
+========================================
+
+========================================
+Part_4.test_9 (OK)
+========================================
+
+
+</pre>
+Testing (stderr):
+<pre>
+
+</pre>

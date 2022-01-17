@@ -1,0 +1,14 @@
+type Point is {&int x, &int y}
+
+(&int)[] copy(&int:1 p) {
+    &int r = p;
+    return [r,r,r,r];
+}
+
+void main() {
+    &int:1 q = new 123;
+    (&int)[] arr = copy(q);
+    for(int i=0;i!=|arr|;i=i+1) {
+	assert *(arr[i]) == 123;
+    }
+}

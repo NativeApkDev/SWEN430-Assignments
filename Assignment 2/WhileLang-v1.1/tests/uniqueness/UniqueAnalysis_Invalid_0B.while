@@ -1,0 +1,13 @@
+void drop(int n) {
+    &int:1 p = new 123;
+    if(n >= 0) {
+	
+    } else {
+	delete p;
+    }
+    delete p;    
+}
+
+void main() {
+    drop(0);    
+}

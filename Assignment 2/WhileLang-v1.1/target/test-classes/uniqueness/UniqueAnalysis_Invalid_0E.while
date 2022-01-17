@@ -1,0 +1,5 @@
+void main() {
+    {&int:1 ptr} r = {ptr: new 0};
+    delete r.ptr;
+    &int:1 q = r.ptr;
+}

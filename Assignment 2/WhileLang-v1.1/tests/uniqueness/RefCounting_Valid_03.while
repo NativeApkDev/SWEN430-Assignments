@@ -1,0 +1,16 @@
+void main() {
+    &int p = new 123;
+    //
+    int i = 0;
+    //
+    while(i < 5) {
+	// +1 ref count
+	&int q = p;
+	// +2 ref count
+	&int r = q;
+	// -2 ref count
+	i = i + 1;
+    }
+    //
+    delete (&int:1) p;    
+}

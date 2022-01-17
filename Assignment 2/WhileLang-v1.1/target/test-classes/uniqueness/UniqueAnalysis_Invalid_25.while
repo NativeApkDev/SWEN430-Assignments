@@ -1,0 +1,6 @@
+void main() {
+    &{&int:1 ptr}:1 r = new {ptr: new 0};
+    delete r->ptr;
+    &{&int:1 ptr}:1 q = r;
+    delete q->ptr;
+}

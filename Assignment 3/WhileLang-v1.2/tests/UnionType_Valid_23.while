@@ -1,0 +1,5 @@
+type egunion is int|null|bool|int[]
+
+void main() {
+    assert 1 == 1;
+}

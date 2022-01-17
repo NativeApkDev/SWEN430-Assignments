@@ -1,0 +1,8 @@
+int f(bool[] items) {
+  int i = 0;
+  do {
+     i = items[i][0];
+  } while false;
+
+  return -1;
+}

@@ -1,0 +1,14 @@
+type rec1 is {int f}|{null f}
+    
+{int|null f}[] f(rec1 x) {
+    return [x];
+}
+
+rec1[] g({int|null f} x) {
+    return [x];
+}
+
+void main() {
+    assert f({f:null}) == g({f:null});
+    assert f({f:1}) == g({f:1});
+}

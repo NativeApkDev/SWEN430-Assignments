@@ -1,0 +1,8 @@
+null f() {
+    return null;
+}
+
+void main() {
+    assert f() == null;
+}
+

@@ -1,0 +1,13 @@
+bool f(int|null x, bool|null y) {
+    if x == y {
+	return true;
+    } else {
+	return false;
+    }
+}
+
+void main() {
+    assert f(null,null);
+    assert !f(null,false);
+    assert !f(1,null);    
+}

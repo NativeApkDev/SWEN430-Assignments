@@ -1,0 +1,11 @@
+type unique is (&int:1)[]
+    
+void main() {
+    unique ap = [new 123, new 223, new 323];
+    //
+    assert *(ap[0]) == 123;
+    assert *(ap[1]) == 223;
+    assert *(ap[2]) == 323;
+    //
+    delete ap[0];
+}

@@ -1,0 +1,5 @@
+type isNull is null
+
+int f(isNull r) {
+    return r;
+}

@@ -1,0 +1,7 @@
+int f(&int:1 q) {
+    return 0;
+}
+void main() {
+    &int:1 p = new 123;
+    *p = f(p);
+}

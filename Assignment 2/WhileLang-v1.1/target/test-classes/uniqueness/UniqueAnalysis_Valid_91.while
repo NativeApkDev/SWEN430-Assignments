@@ -1,0 +1,7 @@
+// assignment outline
+// part3
+void main() {
+	&{int f}:1 p = new {f:123}; 
+	int i = p->f;
+	assert p->f == 123;
+}

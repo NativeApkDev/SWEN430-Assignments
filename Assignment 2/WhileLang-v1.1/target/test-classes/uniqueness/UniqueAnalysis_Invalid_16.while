@@ -1,0 +1,6 @@
+void main() {
+    (&int:1)[] arr = [new 1, new 1];
+    &int:1 p = arr[0]; // ok
+    &int:1 q = arr[1]; // not ok
+    assert *p == *q;
+}

@@ -1,0 +1,24 @@
+type intnull is int|null
+
+intnull[][] f(intnull[][] xs, intnull[] x) {
+    xs[0] = x;
+    return xs;
+}
+
+intnull[][] g(intnull[] x) {
+    int|null n = null;
+    int|null z = 0;
+    int|null o = 1;            
+    intnull[][] xs = [[z],[o],[n]];
+    return f(xs,x);
+}
+
+void main() {
+    int|null n = null;
+    int|null z = 0;
+    int|null o = 1;            
+    
+    assert g([0]) == [[z],[o],[n]];
+    assert g([1]) == [[o],[o],[n]];
+    assert g([null]) == [[n],[o],[n]];
+}

@@ -1,0 +1,9 @@
+&int:1 id(&int p) {
+    return (&int:1) p;
+}
+
+void main() {
+    &int:1 p = new 123;
+    //
+    assert p == id(p);
+}

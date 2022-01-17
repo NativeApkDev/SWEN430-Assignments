@@ -1,0 +1,12 @@
+{{int f}|{bool f} h} f(int|bool x) {
+    return {h: {f: x}};
+}
+
+{{int|bool f} h} g(int|bool x) {
+    return {h: {f: x}};
+}
+
+void main() {
+    assert f(1) == g(1);
+    assert f(false) == g(false);
+}

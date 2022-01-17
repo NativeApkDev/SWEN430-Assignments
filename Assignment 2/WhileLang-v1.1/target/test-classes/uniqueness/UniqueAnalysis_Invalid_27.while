@@ -1,0 +1,5 @@
+void main() {
+    { null|&int:1 ptr } r1 = {ptr: new 123};
+    { null|&int:1 ptr } r2 = r1;
+    assert r1.ptr != null;
+}

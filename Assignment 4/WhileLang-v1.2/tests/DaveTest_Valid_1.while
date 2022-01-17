@@ -1,0 +1,12 @@
+int[] f(int a, int b, int c) {
+      return [c];
+}
+
+void main() {
+     int[] arr = f(0,0,3); // There is a problem with this line since the program fails starting this line
+     assert arr[0] == 3; // No need to copy array elements onto the stack after array memory allocation.
+     // "arr[0] == 1" is supposed to fail. This problem occurs because of my calculation mistake. The value of "arr[0]"
+     // is supposed to be 3.
+     // length of arr = 1.
+     assert |arr| == 1;
+}

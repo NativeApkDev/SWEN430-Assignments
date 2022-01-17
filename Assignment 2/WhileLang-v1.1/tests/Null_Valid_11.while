@@ -1,0 +1,8 @@
+void f(null x) {
+    x = null;
+}
+
+void main() {
+    f(null);
+}
+

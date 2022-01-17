@@ -1,0 +1,13 @@
+int get(null|&int r) {
+    if(r is &int) {	
+	return *((&int)r);
+    } else {
+	return 0;
+    }
+}
+
+void main() {
+    assert get(null) == 0;
+    assert get(new 1) == 1;
+    assert get(new 123) == 123;
+}

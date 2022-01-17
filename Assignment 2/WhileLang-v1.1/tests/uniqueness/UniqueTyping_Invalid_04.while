@@ -1,0 +1,4 @@
+void main() {
+    &int p = new 1;
+    &int:1 q = p;
+}

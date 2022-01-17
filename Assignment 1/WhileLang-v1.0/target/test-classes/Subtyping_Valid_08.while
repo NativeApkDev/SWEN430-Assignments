@@ -1,0 +1,31 @@
+type R1 is {int f, int g, int[] h}
+type R2 is {int f, int g, null h}
+type R3 is {int f, null g, int[] h}
+type R4 is {int f, null g, null h}
+type R5 is {null f, int g, int[] h}
+type R6 is {null f, int g, null h}
+type R7 is {null f, null g, int[] h}
+type R8 is {null f, null g, null h}
+
+type expanded is R1|R2|R3|R4|R5|R6|R7|R8
+type factored is {int|null f, int|null g, int[]|null h}
+
+factored f(expanded r) {
+    return r;
+}
+
+expanded g(factored r) {
+    return r;
+}
+
+void main() {
+    expanded a = {f:null,g:null,h:null};
+    expanded b = {f:123,g:null,h:[123]};
+    expanded c = {f:null,g:123,h:null};
+    expanded d = {f:123,g:123,h:[123]};
+    
+    assert f(a) == g(a);
+    assert f(b) == g(b);
+    assert f(c) == g(c);
+    assert f(d) == g(d);    
+}

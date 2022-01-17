@@ -1,0 +1,11 @@
+type ref is &int:1
+
+void main() {
+    null|&int p = new 123;
+    //
+    null|ref nq = null;
+    //
+    assert nq == null;
+    //
+    nq = p;
+}

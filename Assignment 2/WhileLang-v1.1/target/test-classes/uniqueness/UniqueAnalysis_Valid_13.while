@@ -1,0 +1,10 @@
+void main() {
+    &int:1 p = new 123;
+    {&int f} q = {f:new 345};
+    //
+    q.f = p;
+    //
+    assert *(q.f) == 123;
+    //
+    delete (&int:1) q.f;
+}

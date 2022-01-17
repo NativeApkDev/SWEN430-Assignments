@@ -1,0 +1,8 @@
+type nint is null|int
+type nirec is null|int|{int f}
+
+void main() {
+    nirec[] ys = [{f:1}];
+    //
+    assert ys[0] == {f:1};
+}

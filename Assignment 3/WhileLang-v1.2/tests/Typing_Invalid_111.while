@@ -1,0 +1,5 @@
+type rec is {int|null f}
+
+{int|bool f} f({rec f} x) {
+    return x.f;
+}

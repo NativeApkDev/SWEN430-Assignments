@@ -1,0 +1,13 @@
+int mul(int arg1, int arg2) {
+    int x = 0;
+    int y = 0;
+    while (y < arg1) {
+        x = x + arg2;
+        y = y + 1;
+    }
+    return x;
+}
+
+void main() {
+    //assert mul(5, 3) == 15;
+}

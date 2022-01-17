@@ -1,0 +1,13 @@
+void main() {
+    &int p = new 123;
+    //
+    for(int i=0;i<5;i=i+1) {
+	// +1 ref count
+	&int q = p;
+	// +2 ref count
+	&int r = q;
+	// -2 ref count
+    }
+    //
+    delete (&int:1) p;    
+}

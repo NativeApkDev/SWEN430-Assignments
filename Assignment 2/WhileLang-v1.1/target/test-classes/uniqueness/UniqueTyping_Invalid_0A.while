@@ -1,0 +1,17 @@
+type Vec is { int len, &(int[]):1 data }
+
+void drop(Vec v) {
+    delete v.data;
+}
+
+Vec from_array(&(int[]):1 d) {
+    return {len: 0, data: d};
+}
+
+void main() {
+    &(int[]) p = new [123,223,23];
+    // Construct vector
+    Vec v = from_array(p);
+    //
+    drop(v);
+}

@@ -1,0 +1,9 @@
+type unique is &(int[]):1
+    
+void main() {
+    unique pa = new [123,223,323];
+    //
+    assert *pa == [123,223,323];
+    //
+    delete pa;
+}

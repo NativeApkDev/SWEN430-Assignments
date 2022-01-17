@@ -1,0 +1,11 @@
+type intnull is int|null
+
+intnull[][] f(intnull[][] xs, intnull[] x) {
+    xs[0] = x;
+    return xs;
+}
+
+void main() {
+    int|null z = null;
+    assert z == null;
+}

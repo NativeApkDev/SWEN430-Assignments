@@ -1,0 +1,15 @@
+
+type rec1 is {int|null f}
+type rec2 is {rec1 f}
+type rec3 is {rec2|rec1 f}
+type rec4 is {rec3|rec2 f}
+type rec5 is {rec4|rec3 f}
+type rec6 is {rec5|rec4 f}
+type rec7 is {rec6|rec5 f}
+type rec8 is {rec7|rec6 f}
+type rec9 is {rec8|rec7 f}
+type rec10 is {rec9|rec8 f}
+
+int f(rec10 x) {
+    return x.f.f.f.f.f.f.f.f.f.f;
+}

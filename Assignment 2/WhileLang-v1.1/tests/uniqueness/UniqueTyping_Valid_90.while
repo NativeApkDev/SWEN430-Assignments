@@ -1,0 +1,10 @@
+// assignment outline 
+// part 2 - down casting
+&int:1 create() { 
+	&int p = new 123; 
+	return (&int:1) p;
+}
+
+void main() {
+	create();
+}

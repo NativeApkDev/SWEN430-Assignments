@@ -1,0 +1,7 @@
+type ref is &{int f}
+type unique_ref is &{int f}:1
+    
+void main() {
+    ref p = new {f: 1};
+    unique_ref q = p;
+}

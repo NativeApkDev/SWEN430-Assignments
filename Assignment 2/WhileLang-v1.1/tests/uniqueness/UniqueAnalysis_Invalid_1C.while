@@ -1,0 +1,5 @@
+void main() {
+  &int:1 p = new 1;
+  &int:1 q = p;
+  assert *p == *q;
+}

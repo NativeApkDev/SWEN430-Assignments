@@ -1,0 +1,13 @@
+void main() {
+    &int p = new 123;
+    //
+    if(true) {
+	// +1 ref count
+	&int q = p;
+	// +2 ref count
+	&int r = q;
+	// -2 ref count
+    }
+    //
+    delete (&int:1) p;    
+}

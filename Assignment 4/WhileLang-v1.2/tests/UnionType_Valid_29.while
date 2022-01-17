@@ -1,0 +1,20 @@
+bool|int|null f() {
+    bool|int|null y = true;
+    return y;
+}
+
+bool|int|null g() {
+    bool|int|null y = 1;
+    return y;
+}
+
+bool|int|null h() {
+    bool|int|null y = null;
+    return y;
+}
+
+void main() {
+    assert f() == true;
+    assert g() == 1;
+    assert h() == null;
+}

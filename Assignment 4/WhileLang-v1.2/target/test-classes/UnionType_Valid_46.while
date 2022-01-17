@@ -1,0 +1,7 @@
+{int f}|{null f} f() {
+    return {f: null};
+}
+
+void main() {
+    assert f() == {f:null};
+}

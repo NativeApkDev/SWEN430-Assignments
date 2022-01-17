@@ -1,0 +1,29 @@
+type in_ii is {int f, int g, int h}|{null f, int g, int h}
+type in_ni is {int f, null g, int h}|{null f, null g, int h}
+type in_in is {int f, int g, null h}|{null f, int g, null h}
+type in_nn is {int f, null g, null h}|{null f, null g, null h}
+    
+type expanded is in_ii|in_ni|in_in|in_nn
+type factored is {int|null f, int|null g, int|null h}
+
+factored f(expanded r) {
+    return r;
+}
+
+expanded g(factored r) {
+    return r;
+}
+
+void main() {
+    expanded a = {f:null,g:null,h:null};
+    expanded b = {f:123,g:null,h:222};
+    expanded c = {f:null,g:123,h:456};
+    expanded d = {f:123,g:373,h:null};
+    expanded e = {f:774,g:123,h:null};
+    
+    assert f(a) == g(a);
+    assert f(b) == g(b);
+    assert f(c) == g(c);
+    assert f(d) == g(d);
+    assert f(e) == g(e);
+}

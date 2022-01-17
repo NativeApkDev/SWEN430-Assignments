@@ -1,0 +1,15 @@
+void nop(&int p) {
+    // +1 ref count
+    &int q = p;
+    // +2 ref count
+    &int r = q;
+    // -2 ref count    
+}
+
+void main() {
+    &int p = new 123;
+    //
+    nop(p);
+    //
+    delete (&int:1) p;    
+}

@@ -1,0 +1,11 @@
+type Point is {int x, int[] ys}
+
+void main() {
+    &Point r = new {x:1,ys:[1,2,3]};
+    //
+    r->x = 2;
+    r->ys[0] = 0;
+    //
+    assert r->x == 2;
+    assert r->ys == [0,2,3];
+}

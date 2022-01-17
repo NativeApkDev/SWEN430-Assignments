@@ -1,0 +1,5 @@
+void main() {
+    &bool:1 p = new false;
+    //
+    assert (p is &bool:1);
+}

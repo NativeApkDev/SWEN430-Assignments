@@ -1,0 +1,5 @@
+void main() {
+    int|null|bool z = 5;
+    int x = (int) z;
+    assert x == 5;
+}

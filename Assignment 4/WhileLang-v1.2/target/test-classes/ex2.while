@@ -1,0 +1,12 @@
+int[] f(int[] a) {
+     a[0] = 5;
+     return a;
+}
+
+void main() {
+     int[] b = [1,2,3];
+     assert [1,2,3] == b;
+     assert [5,2,3] == f(b);
+     // assert [1,2,3] == b; // there is a problem with this line. [1, 2, 3] == b is supposed to be true since
+     // the change in the value of b[0] should be temporary.
+}
